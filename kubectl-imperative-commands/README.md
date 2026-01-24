@@ -22,12 +22,12 @@ kubectl <command> --dry-run=client -o yaml > resource.yaml
 
 | Category | Description |
 |----------|-------------|
-| [Pods](pods.md) | Creating and managing pods |
-| [Deployments](deployments.md) | Deployment operations |
-| [Services](services.md) | Exposing applications |
-| [ConfigMaps & Secrets](configmaps-secrets.md) | Configuration management |
-| [Jobs & CronJobs](jobs-cronjobs.md) | Batch workloads |
-| [Other Resources](other-resources.md) | Namespaces, ServiceAccounts, etc. |
+| [Pods](pods/) | Creating and managing pods |
+| [Deployments](deployments/) | Deployment operations |
+| [Services](services/) | Exposing applications |
+| [ConfigMaps & Secrets](configmaps-secrets/) | Configuration management |
+| [Jobs & CronJobs](jobs-cronjobs/) | Batch workloads |
+| [Other Resources](other-resources/) | Namespaces, ServiceAccounts, etc. |
 
 ## Quick Reference
 
