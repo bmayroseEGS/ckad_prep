@@ -2,6 +2,23 @@
 
 A collection of practice questions, scenarios, and exercises to prepare for the Certified Kubernetes Application Developer (CKAD) exam.
 
+## Quick Start - Setup Practice Environment
+
+```bash
+# Clone this repo
+git clone git@github.com:bmayroseEGS/ckad_prep.git
+cd ckad_prep
+
+# Run setup on Ubuntu/Debian
+cd deployment_infrastructure
+chmod +x setup-machine.sh
+./setup-machine.sh
+```
+
+This installs K3s, kubectl, Helm, k9s, and other tools needed for CKAD practice.
+
+See [deployment_infrastructure/](deployment_infrastructure/) for full setup details.
+
 ## Exam Domains
 
 The CKAD exam covers the following domains:
@@ -18,6 +35,14 @@ The CKAD exam covers the following domains:
 
 ```
 ckad_prep/
+├── deployment_infrastructure/     # Setup scripts for practice environment
+│   ├── setup-machine.sh          # Installs K3s, kubectl, Helm, k9s
+│   └── README.md
+├── kubectl-imperative-commands/   # Imperative command reference
+│   ├── pods/
+│   ├── deployments/
+│   ├── services/
+│   └── ...
 ├── 01-application-design-build/
 ├── 02-application-deployment/
 ├── 03-observability-maintenance/
