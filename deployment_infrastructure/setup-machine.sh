@@ -57,6 +57,12 @@ check_sudo() {
         exit 1
     fi
 
+    # Check sudo access (use -n for non-interactive check first)
+    if sudo -n true 2>/dev/null; then
+        print_success "Passwordless sudo access confirmed"
+        return 0
+    fi
+
     if ! sudo -v; then
         print_error "This script requires sudo access."
         exit 1
